@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fadhil Mackiyu Kajwangya Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --purple:#8a2be2;
+  --blue:#00aaff;
+  --card:#111;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  overflow:hidden;
+  height:100vh;
+  background:url('https://www.thecitizen.co.tz/resource/image/4388556/landscape_ratio3x2/1620/1080/59ad6564d1ee0f54d28a8fa8411c63a/kT/atcl-pic.jpg') no-repeat center/cover;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:flex-end;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  padding:15px;
+  z-index:1000;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+nav li{
+  cursor:pointer;
+  transition:0.3s;
+}
+
+nav li:hover{
+  color:var(--blue);
+}
+
+/* SECTIONS */
+.section{
+  display:none;
+  height:100vh;
+  width:100%;
+  padding-top:80px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:rgba(0,0,0,0.6);
+}
+
+.section.active{
+  display:flex;
+  flex-direction:column;
+}
+
+/* HERO */
+.hero h1{
+  font-size:3.5rem;
+  color:var(--purple);
+}
+
+.hero h2{
+  margin-top:10px;
+  font-weight:300;
+}
+
+.hero p{
+  margin-top:20px;
+  max-width:600px;
+  color:#ccc;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:15px;
+  max-width:750px;
+}
+
+/* SKILLS */
+.skill{
+  margin-top:15px;
+  text-align:left;
+}
+
+/* BUTTON */
+.button{
+  margin-top:20px;
+  padding:12px 25px;
+  border-radius:8px;
+  background:var(--purple);
+  color:#fff;
+  border:none;
+  cursor:pointer;
+}
+
+.button:hover{
+  background:var(--blue);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <ul>
+    <li onclick="show('home')">Home</li>
+    <li onclick="show('education')">Education</li>
+    <li onclick="show('career')">Career</li>
+    <li onclick="show('skills')">Skills</li>
+    <li onclick="show('projects')">Projects</li>
+    <li onclick="show('contact')">Contact</li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="section active hero">
+  <h1>Welcome</h1>
+  <h2>Hello, I am Fadhil Mackiyu Kajwangya</h2>
+  <p>Tanzanian aviation enthusiast focused on aircraft maintenance, safety, and innovation.</p>
+</div>
+
+<!-- EDUCATION -->
+<div id="education" class="section">
+  <div class="card">
+    <h2>Education</h2>
+    <p>National Institute of Transport (NIT) – Aircraft Maintenance Engineering (2019)</p>
+    <p>Ethiopian Aviation University – Avionics & Airframe (2022)</p>
+  </div>
+</div>
+
+<!-- CAREER -->
+<div id="career" class="section">
+  <div class="card">
+    <h2>Career</h2>
+    <p>Line Maintenance Engineer at Air Tanzania since 2023. Responsible for aircraft inspection, troubleshooting, and operational safety.</p>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section">
+  <div class="card">
+    <h2>Skills & Expertise</h2>
+
+    <div class="skill">
+      <strong>Aircraft Maintenance:</strong>
+      <p>Inspection, repair, and servicing of aircraft to ensure safety and airworthiness.</p>
+    </div>
+
+    <div class="skill">
+      <strong>Avionics Systems:</strong>
+      <p>Handling navigation, communication, and electronic flight control systems.</p>
+    </div>
+
+    <div class="skill">
+      <strong>Airframe & Powerplant:</strong>
+      <p>Maintaining aircraft structure, engines, and mechanical components.</p>
+    </div>
+
+    <div class="skill">
+      <strong>Line Maintenance:</strong>
+      <p>Routine checks and quick troubleshooting to keep aircraft operational.</p>
+    </div>
+
+    <div class="skill">
+      <strong>Precision & Safety:</strong>
+      <p>Ensuring strict adherence to aviation safety standards and procedures.</p>
+    </div>
+
+    <div class="skill">
+      <strong>Problem Solving:</strong>
+      <p>Diagnosing faults and applying effective technical solutions quickly.</p>
+    </div>
+
+    <div class="skill">
+      <strong>Team Collaboration:</strong>
+      <p>Working with engineers and crew for efficient aircraft operations.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects" class="section">
+  <div class="card">
+    <h2>Projects</h2>
+    <p>Boeing 737 MAX & Dash 8 aircraft maintenance experience under real operational conditions.</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: fidfad05@gmail.com</p>
+    <p>Phone: +255 766 062 570</p>
+  </div>
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.section').forEach(sec=>{
+    sec.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
