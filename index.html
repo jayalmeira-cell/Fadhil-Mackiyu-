@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fadhil Mackiyu Kajwangya Portfolio</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><style>
+:root{
+  --bg:#0b0b0b;
+  --purple:#8a2be2;
+  --blue:#00aaff;
+  --card:#111;
+  --highlight:#7d5fff;
+  --soft:#bfb8ff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:#eee;line-height:1.6;scroll-behavior:smooth}
+a{color:var(--highlight);text-decoration:none;transition:0.3s;display:flex;align-items:center}a:hover{color:var(--blue)}
+a i{margin-right:10px;font-size:1.5rem}
+nav{position:fixed;width:100%;top:0;display:flex;justify-content:center;background:rgba(0,0,0,0.7);backdrop-filter:blur(10px);padding:10px;z-index:1000}
+nav a{margin:0 15px;font-size:0.9rem}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at top,#2b0033,#000);padding:20px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('https://i.ibb.co/k6pDhPb/plane-bg.png') center/cover no-repeat;opacity:0.05;z-index:0}
+.hero h1{font-size:4rem;color:var(--purple);z-index:1;animation:fadeIn 2s ease-in-out}
+.hero h2{margin-top:10px;font-weight:300;z-index:1}
+.hero p{margin-top:20px;max-width:600px;color:#ccc;z-index:1}
+.hero .scroll{margin-top:30px;font-size:0.9em;color:var(--soft);z-index:1}
+.hero .buttons{margin-top:30px;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;z-index:1}
+.button{padding:12px 25px;border-radius:8px;font-weight:500;background:var(--purple);color:#fff;transition:0.3s;display:inline-block}
+.button:hover{background:var(--blue);color:#fff;transform:translateY(-3px)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+section{padding:80px 20px;max-width:1000px;margin:auto;position:relative;z-index:1}
+h3{font-size:1.5rem;margin-bottom:20px;color:var(--highlight);border-bottom:2px solid var(--blue);padding-bottom:5px}
+.card{background:var(--card);padding:25px;border-radius:15px;box-shadow:0 0 25px rgba(138,43,226,0.2);transition:0.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 0 35px rgba(0,170,255,0.3)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.skills{display:flex;flex-wrap:wrap;gap:15px;margin-top:20px}
+.skill{background:var(--card);padding:10px 15px;border-radius:8px;box-shadow:0 0 20px rgba(0,170,255,0.2);transition:0.3s}
+.skill:hover{transform:translateY(-3px);box-shadow:0 0 25px rgba(138,43,226,0.3)}
+.contact a{display:flex;align-items:center;margin:15px 0;font-size:1rem}
+.contact a i,img{margin-right:10px;width:24px;height:24px}
+footer{text-align:center;padding:20px;color:#777}
+@media(max-width:768px){.hero h1{font-size:2.5rem}.grid{grid-template-columns:1fr}}
+</style></head>
+<body><nav>
+  <a href="#home">Home</a>
+  <a href="#education">Education</a>
+  <a href="#career">Career</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav><!-- HERO --><div class="hero" id="home">
+  <h1>Welcome</h1>
+  <h2>Hello, I am Fadhil Mackiyu Kajwangya</h2>
+  <p>Tanzanian youth in aviation, passionate about aircraft systems and innovation. Focused, disciplined, and committed to excellence in aviation maintenance and safety.</p>
+  <div class="buttons">
+    <a href="#contact" class="button">Contact Me</a>
+    <a href="#projects" class="button">View Projects</a>
+    <a href="Fadhil_CV.pdf" download class="button">Download CV</a>
+  </div>
+  <div class="scroll">Scroll down ↓</div>
+</div><!-- EDUCATION --><section id="education">
+  <h3>Education</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>National Institute of Transport (NIT)</h4>
+      <p>BSc in Aircraft Maintenance Engineering (AME)</p>
+      <p>Graduated: 2019</p>
+    </div>
+    <div class="card">
+      <h4>Ethiopian Aviation University</h4>
+      <p>Avionics, Airframe & Powerplant, Maintenance</p>
+      <p>Graduated: 2022</p>
+    </div>
+  </div>
+</section><!-- CAREER --><section id="career">
+  <h3>Career Experience</h3>
+  <div class="card">
+    <p>Tanzanian Aircraft Maintenance Engineer. Air Tanzania Company Limited employee since 2023. Actively working as a Line Maintenance Engineer. Experienced in servicing and maintaining aircraft systems. Focused on safety, precision and engineering excellence.</p>
+  </div>
+</section><!-- SKILLS --><section id="skills">
+  <h3>Skills & Expertise</h3>
+  <div class="skills">
+    <div class="skill">Aircraft Maintenance</div>
+    <div class="skill">Avionics Systems</div>
+    <div class="skill">Airframe & Powerplant</div>
+    <div class="skill">Line Maintenance</div>
+    <div class="skill">Precision & Safety</div>
+    <div class="skill">Problem Solving</div>
+    <div class="skill">Team Collaboration</div>
+  </div>
+</section><!-- PROJECTS --><section id="projects">
+  <h3>Aircraft Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <img src="https://www.thecitizen.co.tz/resource/image/4388556/landscape_ratio3x2/1620/1080/59ad6564d1ee0f54d28a8fa8411c63a/kT/atcl-pic.jpg" alt="Air Tanzania Boeing 737 MAX parked at night" style="width:100%; border-radius:10px;">
+      <h4>Air Tanzania Boeing 737 MAX</h4>
+      <p>Real aircraft model where Fadhil works on line and routine maintenance.</p>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/5H-TCG%40PEK_%2820221104080346%29.jpg" alt="Dash 8 aircraft" style="width:100%; border-radius:10px;">
+      <h4>Air Tanzania Dash 8</h4>
+      <p>Serviced avionics, airframe & powerplant systems maintaining flight readiness.</p>
+    </div>
+  </div>
+</section><!-- CONTACT --><section id="contact">
+  <h3>Contact</h3>
+  <div class="card contact">
+    <a href="mailto:fidfad05@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"> fidfad05@gmail.com</a>
+    <a href="https://api.whatsapp.com/send?phone=255766062570" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> +255-766-062-570</a>
+    <a href="https://www.instagram.com/fadhil_mcq?igsh=MW5jN3kyZ2o2cnJrNQ==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram Profile</a>
+  </div>
+</section><footer>
+  © 2026 Fadhil Mackiyu Kajwangya
+</footer></body>
+</html>
